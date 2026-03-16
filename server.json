@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.github.sirnoeris/nomad-intel-api",
+  "description": "Pay-per-query digital nomad intelligence for AI agents. Visa requirements, cost of living, coworking spaces, safety advisories, and connectivity data for 20+ countries. Payments via x402 protocol (USDC on Base).",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/sirnoeris/nomad-intel-api",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "transportType": "https",
+      "url": "https://nomad-intel-api.f7nv4k694k.workers.dev"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "nomad-intel-api",
+      "version": "1.0.0",
+      "runtimeHint": "node",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
