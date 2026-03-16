@@ -122,6 +122,86 @@ app.get("/api/v1/endpoints", (c) => {
   });
 });
 
+// ─── MCP Server Card (Smithery discovery) ───────────────────────────────────
+
+app.get("/.well-known/mcp/server-card.json", (c) => {
+  return c.json({
+    serverInfo: {
+      name: "Nomad Intel API",
+      version: "1.0.0",
+    },
+    authentication: {
+      required: false,
+    },
+    tools: [
+      {
+        name: "get_visa_info",
+        description: "Get visa requirements for Australian passport holders. Covers 20+ countries.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            country: { type: "string", description: "Country name or ISO code (e.g., 'thailand' or 'TH')" },
+          },
+        },
+      },
+      {
+        name: "get_cost_of_living",
+        description: "Get monthly cost of living breakdown for digital nomad cities.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            city: { type: "string", description: "City name (e.g., 'bangkok', 'chiang-mai')" },
+            budget: { type: "string", description: "Budget level: low, mid, or high" },
+          },
+        },
+      },
+      {
+        name: "get_coworking_spaces",
+        description: "Get coworking space listings with prices, WiFi speeds, and amenities.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            city: { type: "string", description: "City name" },
+          },
+        },
+      },
+      {
+        name: "get_safety_info",
+        description: "Get safety ratings, scam warnings, health risks, and emergency contacts.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            country: { type: "string", description: "Country name or ISO code" },
+          },
+        },
+      },
+      {
+        name: "get_connectivity",
+        description: "Get internet speeds, eSIM providers, WiFi cafe recommendations, and reliability.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            city: { type: "string", description: "City name" },
+          },
+        },
+      },
+      {
+        name: "get_nomad_bundle",
+        description: "Get complete nomad intel bundle — visa, cost, coworking, safety, and connectivity for a city.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            city: { type: "string", description: "City name (required)" },
+          },
+          required: ["city"],
+        },
+      },
+    ],
+    resources: [],
+    prompts: [],
+  });
+});
+
 // ─── x402 Discovery ─────────────────────────────────────────────────────────
 
 app.get("/.well-known/x402.json", (c) => {
