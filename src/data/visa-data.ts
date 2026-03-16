@@ -161,7 +161,7 @@ export const visaData: VisaInfo[] = [
     dn_visa_cost_usd: 22,
     dn_visa_duration_months: 6,
     notes:
-      "Australian passport holders enjoy 90-day visa-free stay for tourism/business (no work). No extensions for visa-free; must depart and re-enter for new period (border runs possible but frequent entries scrutinized). No VOA or e-visa needed for short stays.",
+      "Australian passport holders enjoy 90-day visa-free stay for tourism/business (no work allowed). Digital Nomad Visa (Designated Activities) launched April 2024: 6-month stay, non-renewable (must leave for 6 months before re-applying), requires annual income of ¥10 million (~$67,000–$70,000 USD), eligible for Australians. No Residence Card issued — limits bank accounts and long-term leases. Family can accompany on same status. As of 2026, 50+ eligible nationalities including Australia.",
     last_updated: "2026-03-16",
   },
   {
@@ -176,7 +176,7 @@ export const visaData: VisaInfo[] = [
     dn_visa_cost_usd: 100,
     dn_visa_duration_months: 24,
     notes:
-      "Australian passport holders enjoy 90-day visa-free stay for tourism/business ([Smartraveller](https://www.smartraveller.gov.au/destinations/asia/south-korea-republic-korea)). K-ETA exempt until Dec 31, 2026 (recently extended; announced late 2025) ([Korean Embassy AU](https://www.mofa.go.",
+      "Australian passport holders enjoy 90-day visa-free stay for tourism/business. K-ETA exemption extended to Dec 31, 2026 (announced Dec 2025 by Ministry of Justice). As of Jan 1, 2026, all K-ETA-exempt travelers must submit a mandatory e-Arrival Card digitally within 3 days before arrival (replaces paper arrival cards). Overstay fine is a one-time ₩1,000,000 (~$750) flat penalty per offense.",
     last_updated: "2026-03-16",
   },
   {
@@ -191,7 +191,7 @@ export const visaData: VisaInfo[] = [
     dn_visa_cost_usd: null,
     dn_visa_duration_months: 24,
     notes:
-      "Australian passport holders enjoy 90 days visa-free entry with passport valid 6+ months and return ticket. No extensions for visa-free stay. Visa on arrival not available. Visitor e-visa available via online application for longer stays if needed.",
+      "Australian passport holders enjoy 90 days visa-free entry with passport valid 6+ months and return ticket. Digital Nomad Visa (6-month visitor visa, renewable up to 2 years total): requires remote work for overseas employer/clients, no Taiwan-based clients allowed. Taiwan's Employment Gold Card (1–3 years) expanded to include Environmental Science and Biotechnology fields effective Jan 1, 2026 under updated Foreign Professional Talent Act — also shortens permanent residency pathway.",
     last_updated: "2026-03-16",
   },
   {
@@ -206,7 +206,7 @@ export const visaData: VisaInfo[] = [
     dn_visa_cost_usd: 370,
     dn_visa_duration_months: 24,
     notes:
-      "As of March 2026, Australians enjoy 90/180 visa-free short stays in Schengen/Portugal for tourism/business. EES biometrics tracking active (full April 2026); ETIAS (~$22) required Q4 2026 - not yet. No VoA/eVisa for short stay.",
+      "Australians enjoy 90/180 visa-free short stays in Schengen/Portugal. D8 Digital Nomad Visa (2 options): Temporary Stay (1 year) or Residency Visa (4 months entry, then 2-year permit renewable to 5 years/citizenship path). Income requirement: 4× Portuguese minimum wage = €3,680/month (~$4,000). EES biometric border tracking rolling out 2026; ETIAS pre-authorization (~$22) expected Q4 2026. D7 passive income visa now discouraged for active remote workers — use D8 instead.",
     last_updated: "2026-03-16",
   },
   {
@@ -314,4 +314,80 @@ export const visaData: VisaInfo[] = [
       "Australian passport holders enjoy 90 days visa-free within any 180-day period, confirmed by multiple sources including Australian Smartraveller (updated Feb 2026), Wikipedia visa policy, Sherpa, and albania-evisa.org list. No visa on arrival for Australians. eVisa not required as visa-free.",
     last_updated: "2026-03-16",
   },
+  {
+    country: "Czech Republic",
+    country_code: "CZ",
+    visa_free_days: 90,
+    visa_on_arrival: false,
+    e_visa_available: false,
+    cost_usd: null,
+    overstay_penalty_per_day_usd: null,
+    digital_nomad_visa: true,
+    dn_visa_cost_usd: 120,
+    dn_visa_duration_months: 12,
+    notes:
+      "Australian passport holders enjoy 90/180-day visa-free access as part of Schengen. Digital Nomad Program (launched July 2023, Government Decree No. 475/2023): fast-tracks long-term visa for IT/tech professionals from 12 eligible nationalities including Australia, USA, UK, Canada. Income requirement: 1.5× Czech average salary (~69,000 CZK/month, ~$3,000 USD). Freelancers need Czech trade license (Živnostenské oprávnění). Visa fee ~€100, permit up to 12 months, extensions possible.",
+    last_updated: "2026-03-16",
+  },
+  {
+    country: "Estonia",
+    country_code: "EE",
+    visa_free_days: 90,
+    visa_on_arrival: false,
+    e_visa_available: false,
+    cost_usd: null,
+    overstay_penalty_per_day_usd: null,
+    digital_nomad_visa: true,
+    dn_visa_cost_usd: 100,
+    dn_visa_duration_months: 12,
+    notes:
+      "Australians enjoy 90/180-day Schengen visa-free access. Digital Nomad Visa (D-visa, up to 1 year): minimum income €4,500/month gross, must work for employer/clients registered outside Estonia, provides proof of tax compliance from home country. Visa fee €100. Cannot be renewed — must reapply after 6 months outside Estonia. Estonia also offers e-Residency (digital business identity, not a right of stay). Application at nearest Estonian embassy.",
+    last_updated: "2026-03-16",
+  },
+  {
+    country: "Croatia",
+    country_code: "HR",
+    visa_free_days: 90,
+    visa_on_arrival: false,
+    e_visa_available: false,
+    cost_usd: null,
+    overstay_penalty_per_day_usd: null,
+    digital_nomad_visa: true,
+    dn_visa_cost_usd: 210,
+    dn_visa_duration_months: 18,
+    notes:
+      "Australians enjoy 90/180-day Schengen visa-free access. Digital Nomad Temporary Stay Permit: issued for 12 or 18 months (18-month version requires €59,310 in savings or €3,295/month income). After 18 months must leave Croatia for 6 months before reapplying. 12-month permit extendable once by 6 months. Tax exempt on foreign income. Application fees: ~€55 processing + €93 D-visa + €41 permit card. Family members may join via reunification (+10% income per dependent). Registered address in Croatia required.",
+    last_updated: "2026-03-16",
+  },
+  {
+    country: "Ecuador",
+    country_code: "EC",
+    visa_free_days: 90,
+    visa_on_arrival: false,
+    e_visa_available: false,
+    cost_usd: null,
+    overstay_penalty_per_day_usd: null,
+    digital_nomad_visa: false,
+    dn_visa_cost_usd: null,
+    dn_visa_duration_months: null,
+    notes:
+      "Australian passport holders enjoy 90-day visa-free entry (tourist, extendable to 180 days at immigration offices). No dedicated digital nomad visa; remote workers use tourist visa extended up to 180 days, or apply for a Professional/Work Visa (requires local employer) or Rentista (passive income, $800+/month). Ecuador uses USD as its official currency. Long-stay options include Investor Visa ($30,000+ investment) or Pensioner/Retirement Visa ($800+/month pension).",
+    last_updated: "2026-03-16",
+  },
+  {
+    country: "United Arab Emirates",
+    country_code: "AE",
+    visa_free_days: 30,
+    visa_on_arrival: true,
+    e_visa_available: true,
+    cost_usd: 30,
+    overstay_penalty_per_day_usd: 50,
+    digital_nomad_visa: true,
+    dn_visa_cost_usd: 287,
+    dn_visa_duration_months: 12,
+    notes:
+      "Australian passport holders receive 30-day visa on arrival (extendable). Dubai Virtual Working Programme (digital nomad visa): 1 year, renewable annually. Requirements updated Jan 27, 2026: now requires 6 months of consecutive bank statements (previously 3 months) showing minimum $3,500/month income. Application fee $287 (online) or ~$621 (in-person at AMER center). Medical fitness test + Emirates ID required on arrival. Zero personal income tax. Family sponsorship available.",
+    last_updated: "2026-03-16",
+  },
 ];
+
