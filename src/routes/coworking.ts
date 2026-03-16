@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { coworkingData, CoworkingSpace } from "../data/coworking-data";
+import { API_VERSION, DATA_LAST_UPDATED, DISCLAIMER } from "../constants";
 
 const coworking = new Hono();
 
@@ -50,6 +51,9 @@ coworking.get("/", (c) => {
       price_usd: city ? "0.003" : "0.01",
       total_results: results.length,
       currency_note: "All prices in USD",
+      disclaimer: DISCLAIMER,
+      data_version: API_VERSION,
+      data_last_updated: DATA_LAST_UPDATED,
     },
     data: results,
   });

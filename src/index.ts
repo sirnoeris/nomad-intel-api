@@ -7,6 +7,7 @@ import coworkingRoutes from "./routes/coworking";
 import safetyRoutes from "./routes/safety";
 import connectivityRoutes from "./routes/connectivity";
 
+import { API_VERSION, DATA_LAST_UPDATED, DISCLAIMER } from "./constants";
 import { visaData } from "./data/visa-data";
 import { costData } from "./data/cost-data";
 import { coworkingData } from "./data/coworking-data";
@@ -37,6 +38,7 @@ app.get("/", (c) => {
     documentation: "/api/v1/endpoints",
     x402_discovery: "/.well-known/x402.json",
     passport_data: "Australian passport holder",
+    disclaimer: DISCLAIMER,
   });
 });
 
@@ -372,6 +374,9 @@ app.get("/api/v1/bundle", (c) => {
       city: cityMatch.city,
       country: cityMatch.country,
       country_code: cityMatch.country_code,
+      disclaimer: DISCLAIMER,
+      data_version: API_VERSION,
+      data_last_updated: DATA_LAST_UPDATED,
     },
     data: {
       visa: visa[0] ?? null,

@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { visaData, VisaInfo } from "../data/visa-data";
+import { API_VERSION, DATA_LAST_UPDATED, DISCLAIMER } from "../constants";
 
 const visa = new Hono();
 
@@ -41,6 +42,9 @@ visa.get("/", (c) => {
       ),
       total_results: results.length,
       passport: "Australian",
+      disclaimer: DISCLAIMER,
+      data_version: API_VERSION,
+      data_last_updated: DATA_LAST_UPDATED,
     },
     data: results,
   });

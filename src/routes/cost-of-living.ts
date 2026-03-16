@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { costData, CostOfLiving } from "../data/cost-data";
+import { API_VERSION, DATA_LAST_UPDATED, DISCLAIMER } from "../constants";
 
 type BudgetLevel = "low" | "mid" | "high";
 const BUDGET_LEVELS: BudgetLevel[] = ["low", "mid", "high"];
@@ -73,6 +74,9 @@ costOfLiving.get("/", (c) => {
       ),
       total_results: results.length,
       currency_note: "All prices in USD unless otherwise noted",
+      disclaimer: DISCLAIMER,
+      data_version: API_VERSION,
+      data_last_updated: DATA_LAST_UPDATED,
     },
     data,
   });

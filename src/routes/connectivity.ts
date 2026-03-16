@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { connectivityData, ConnectivityInfo } from "../data/connectivity-data";
+import { API_VERSION, DATA_LAST_UPDATED, DISCLAIMER } from "../constants";
 
 const connectivity = new Hono();
 
@@ -49,6 +50,9 @@ connectivity.get("/", (c) => {
         "1970-01-01"
       ),
       total_results: results.length,
+      disclaimer: DISCLAIMER,
+      data_version: API_VERSION,
+      data_last_updated: DATA_LAST_UPDATED,
     },
     data: results,
   });
