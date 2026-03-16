@@ -1,0 +1,17 @@
+name = "nomad-intel-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+X402_NETWORK = "base"
+USDC_CONTRACT = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+FACILITATOR_URL = "https://x402.org/facilitator"
+WALLET_ADDRESS = "0xf148eDEDcC3a3350542d271f67103F9C25602771"
+
+# For production (Base mainnet), change:
+# X402_NETWORK = "base"
+# USDC_CONTRACT = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+#
+# Optionally move WALLET_ADDRESS to a secret:
+# wrangler secret put WALLET_ADDRESS

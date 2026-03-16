@@ -1,0 +1,14 @@
+{
+  "name": "nomad-intel-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Nomad Intel API — digital nomad intelligence for AI agents",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "keywords": ["mcp", "digital-nomad", "travel", "visa", "cost-of-living", "ai-agent"]
+}
